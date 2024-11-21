@@ -244,7 +244,7 @@
   var additionalParticipantData2 = {
     type: jsPsychSurveyText,
     questions: [{ prompt: `<p>Did you have any technical difficulties?:</p>
-                           <p>If you did, type "Yes...", and write down the nature of your issue.</p>`, name: "participant_difficulties" }],
+                           <p>If you did, type "Yes...", and write down the nature of your issue. If not, simply type "No".</p>`, name: "participant_difficulties" }],
     on_finish: function (data) {
       console.log(data.response)
       jsPsych.data.addProperties(
